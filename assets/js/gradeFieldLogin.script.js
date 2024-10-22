@@ -56,7 +56,7 @@ function updateFields() {
     const grade = document.getElementById("grade").value;
     const fieldSelect = document.getElementById("field-of-study");
 
-    fieldSelect.innerHTML = '<option value="" disabled selected>Choose your field...</option>';
+    fieldSelect.innerHTML = '<option value="" disabled selected>رشته خود را انتخاب کنید...</option>';
 
     if (fieldsOfStudy[grade]) {
         fieldsOfStudy[grade].forEach(field => {
