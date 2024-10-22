@@ -113,7 +113,7 @@ body {
     max-width: 850px;
     height: 60px;
     box-sizing: border-box;
-    border-radius: 16px;
+    border-radius: 24px;
     background: var(--widget-blurred-color);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
