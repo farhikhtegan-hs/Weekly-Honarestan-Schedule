@@ -97,27 +97,31 @@ function loginCheck() {
     } else {
         selectedFieldOfStudy = parts[1];
     }
-    
-    const dayOfWeek = 'Saturday';
 
-    console.log("Selected Grade:", selectedGrade);
-    console.log("Selected Field of Study:", selectedFieldOfStudy);
-    console.log("Selected Group:", selectedGroup);
-    
-    if (validCombinations.includes(`${selectedGrade}-${selectedFieldOfStudy.replace(/ /g, '-')}-${selectedGroup}`)) {
-        console.log("Login successful: grade, field of study, and group match.");
-        document.querySelector('.login-container').style.display = 'none';
-        document.querySelector('.schedule-container').style.display = 'flex';
-        document.querySelector('.nav').style.display = 'flex';
-        
-        loadAndDisplaySchedule(selectedGrade, selectedFieldOfStudy, selectedGroup, dayOfWeek);
-    } else {
-        document.querySelector('.login-container').style.display = 'flex';
-        document.querySelector('.schedule-container').style.display = 'none';
-        document.querySelector('.nav').style.display = 'none';
-        console.log("Login failed: invalid grade, field of study, or group.");
-        showMessage('error', 'اطلاعات ورود نامعتبر است.');
-    }
+    getCurrentDayOfWeek().then(({ currentDayFa, currentDayEn }) => {
+        if (currentDayEn) {
+            console.log("Selected Grade:", selectedGrade);
+            console.log("Selected Field of Study:", selectedFieldOfStudy);
+            console.log("Selected Group:", selectedGroup);
+
+            document.getElementById('current-day').textContent = currentDayFa;
+
+            if (validCombinations.includes(`${selectedGrade}-${selectedFieldOfStudy.replace(/ /g, '-')}-${selectedGroup}`)) {
+                console.log("Login successful: grade, field of study, and group match.");
+                document.querySelector('.login-container').style.display = 'none';
+                document.querySelector('.schedule-container').style.display = 'flex';
+                document.querySelector('.nav').style.display = 'flex';
+                
+                loadAndDisplaySchedule(selectedGrade, selectedFieldOfStudy, selectedGroup, currentDayEn);
+            } else {
+                document.querySelector('.login-container').style.display = 'flex';
+                document.querySelector('.schedule-container').style.display = 'none';
+                document.querySelector('.nav').style.display = 'none';
+                console.log("Login failed: invalid grade, field of study, or group.");
+                showMessage('error', 'اطلاعات ورود نامعتبر است.');
+            }
+        }
+    });
 }
 
 function getCookie(name) {
@@ -153,25 +157,24 @@ function setCookie(name, value, days) {
     document.cookie = name + '=' + (value || '') + expires + '; path=/';
 }
 
-function showMessage(type, message) {
-    const successMessage = document.getElementById('success-message');
-    const errorMessage = document.getElementById('error-message');
+const daysOfWeekFa = ['یک‌شنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنج‌شنبه', 'جمعه', 'شنبه'];
+const daysOfWeekEn = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    successMessage.style.display = 'none';
-    errorMessage.style.display = 'none';
-
-    if (type === 'success') {
-        successMessage.textContent = message;
-        successMessage.style.display = 'block';
-    } else if (type === 'error') {
-        errorMessage.textContent = message;
-        errorMessage.style.display = 'block';
-    }
-
-    setTimeout(() => {
-        successMessage.style.display = 'none';
-        errorMessage.style.display = 'none';
-    }, 3000);
+function getCurrentDayOfWeek() {
+    return fetch('http://worldtimeapi.org/api/timezone/Asia/Tehran')
+        .then(response => response.json())
+        .then(data => {
+            const dateTime = new Date(data.datetime);
+            const dayOfWeek = dateTime.getDay();
+            const currentDayFa = daysOfWeekFa[dayOfWeek];
+            const currentDayEn = daysOfWeekEn[dayOfWeek];
+            console.log("Day of the week (FA):", currentDayFa);
+            console.log("Day of the week (EN):", currentDayEn);
+            return { currentDayFa, currentDayEn };
+        })
+        .catch(error => {
+            console.error('Error fetching the current day of the week:', error);
+        });
 }
 
 document.getElementById('login-btn').addEventListener('click', () => {
@@ -204,11 +207,13 @@ function loadAndDisplaySchedule(selectedGrade, selectedFieldOfStudy, selectedGro
     fetch('assets/config/main.config.json')
         .then(response => response.json())
         .then(data => {
+            // دریافت برنامه روزانه بر اساس پارامترها
             const schedule = data[selectedGrade]?.[selectedFieldOfStudy]?.[selectedGroup]?.[dayOfWeek];
             const scheduleRows = document.querySelector('.schedule-rows');
             
-            scheduleRows.innerHTML = '';
-
+            scheduleRows.innerHTML = ''; // پاک کردن برنامه قبلی
+            
+            // بررسی و نمایش برنامه درسی
             if (schedule && schedule.length > 0) {
                 console.log(`Schedule for ${selectedGrade} - ${selectedFieldOfStudy} - ${selectedGroup} on ${dayOfWeek}:`);
                 
@@ -216,6 +221,7 @@ function loadAndDisplaySchedule(selectedGrade, selectedFieldOfStudy, selectedGro
                     const row = document.createElement('div');
                     row.classList.add('schedule-row');
 
+                    // ایجاد هر سطر از برنامه درسی
                     row.innerHTML = `
                         <div class="schedule-cell">${item.lesson}</div>
                         <div class="schedule-cell">${item.teacher}</div>
@@ -228,11 +234,42 @@ function loadAndDisplaySchedule(selectedGrade, selectedFieldOfStudy, selectedGro
                 });
             } else {
                 console.log(`No classes scheduled for ${selectedGrade} - ${selectedFieldOfStudy} - ${selectedGroup} on ${dayOfWeek}.`);
+                
+                const emptyMessage = document.createElement('div');
+                emptyMessage.classList.add('schedule-cell');
+                emptyMessage.textContent = 'برای این روز هیچ کلاسی برنامه‌ریزی نشده است';
+                scheduleRows.appendChild(emptyMessage);
             }
         })
         .catch(error => {
             console.error('Error fetching the schedule:', error);
+            
+            const errorMessage = document.createElement('div');
+            errorMessage.classList.add('error-message');
+            errorMessage.textContent = 'خطا در بارگذاری برنامه درسی. لطفاً دوباره تلاش کنید';
+            scheduleRows.appendChild(errorMessage);
         });
+}
+
+function showMessage(type, message) {
+    const successMessage = document.getElementById('success-message');
+    const errorMessage = document.getElementById('error-message');
+
+    successMessage.style.display = 'none';
+    errorMessage.style.display = 'none';
+
+    if (type === 'success') {
+        successMessage.textContent = message;
+        successMessage.style.display = 'block';
+    } else if (type === 'error') {
+        errorMessage.textContent = message;
+        errorMessage.style.display = 'block';
+    }
+
+    setTimeout(() => {
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
+    }, 3000);
 }
 
 window.onload = loginCheck;
