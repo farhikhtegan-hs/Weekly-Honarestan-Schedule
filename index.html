@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly school schedule</title>
+    <link rel="icon" href="assets/img/wss_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.style.css">
+    <link rel="stylesheet" href="assets/css/layout.style.css">
+    <link rel="stylesheet" href="assets/boxicons-2.1.4/css/boxicons.min.css">
+</head>
+<body>
+
+    <div class="message-container">
+        <div id="error-message" class="error-message"></div>
+        <div id="success-message" class="success-message"></div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-item">
+            <span id="current-day">شنبه</span>
+        </div>
+        <div class="nav-item">
+            <button class="button-logout" id="logout-btn">
+                <i class="bx bx-log-out"></i>
+                <span>خروج</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="lc-header">
+            <span>به سیستم خوش آمدید</span>
+        </div>
+
+        <!-- انتخاب مقطع تحصیلی -->
+        <div class="form-group">
+            <label for="grade">انتخاب مقطع تحصیلی</label>
+            <select class="input-field" name="grade" id="grade" onchange="updateFields()">
+                <option value="" disabled selected>مقطع تحصیلی خود را انتخاب کنید...</option>
+                <option value="10th">پایه دهم</option>
+                <option value="11th">پایه یازدهم</option>
+                <option value="12th">پایه دوازدهم</option>
+            </select>
+        </div>
+
+        <!-- انتخاب رشته تحصیلی -->
+        <div class="form-group">
+            <label for="field-of-study">انتخاب رشته تحصیلی</label>
+            <select class="input-field" name="field-of-study" id="field-of-study">
+                <option value="" disabled selected>رشته خود را انتخاب کنید...</option>
+            </select>
+        </div>
+
+        <!-- انتخاب گروه -->
+        <div class="form-group">
+            <label for="group">انتخاب گروه</label>
+            <select class="input-field" name="group" id="group">
+                <option value="" disabled selected>گروه خود را انتخاب کنید...</option>
+                <option value="group1">گروه ۱</option>
+                <option value="group2">گروه ۲</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button class="submit-btn" type="submit" id="login-btn">ورود</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="schedule-container">
+            <div class="schedule-row schedule-header">
+                <div class="schedule-cell">درس</div>
+                <div class="schedule-cell">معلم</div>
+                <div class="schedule-cell">کلاس</div>
+                <div class="schedule-cell">زمان شروع</div>
+                <div class="schedule-cell">زمان پایان</div>
+            </div>
+    
+            <div class="schedule-rows">
+                <div class="schedule-row">
+                    <div class="schedule-cell">در حال بارگزاری...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Created by Mahdi Zafari | V1.0.0</span>
+    </div>
+        
+    <script src="assets/js/main.script.js"></script>
+    <script src="assets/js/gradeFieldLogin.script.js"></script>
+</body>
+</html>
