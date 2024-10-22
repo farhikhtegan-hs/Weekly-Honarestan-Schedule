@@ -1,0 +1,213 @@
+/* start Login */
+.login-container {
+    width: calc(100% - 40px);
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: var(--widget-blurred-color);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-blurred-color);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 24px;
+    color: var(--text-color);
+    transition: transform 0.3s ease, background 0.3s ease;
+    user-select: none;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0, 0);
+    color: var(--text-color);
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: var(--accent-color);
+}
+
+select.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--widget-color);
+    color: var(--text-color);
+    font-size: 16px;
+    appearance: none;
+    outline: none;
+    transition: var(--tran-01);
+    cursor: pointer;
+}
+
+select.input-field::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+select.input-field option {
+    background-color: var(--widget-color);
+    color: var(--text-color);
+    padding: 10px;
+}
+
+select.input-field:focus {
+    border-color: var(--accent-color);
+}
+
+select.input-field::-ms-expand {
+    display: none;
+}
+
+select.input-field:focus option {
+    background-color: var(--hover-widget-color);
+}
+
+select.input-field option:hover {
+    background-color: var(--hover-widget-color);
+    color: var(--primary-color);
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--login-button-hover-color);
+}
+/* End Login */
+
+/* start schedule */
+.schedule-container {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: var(--widget-blurred-color);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-blurred-color);
+    display: none;
+    flex-direction: column;
+    font-size: 18px;
+    color: var(--text-color);
+    transition: transform 0.3s ease, background 0.3s ease;
+    user-select: none;
+}
+
+.schedule-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.schedule-row:last-child {
+    border-radius: 0 0 16px 16px;
+}
+
+.schedule-header {
+    font-weight: bold;
+    border-radius: 16px 16px 0 0;
+    background-color: var(--widget-hover-color);
+}
+
+.schedule-row:nth-child(even) {
+    background: var(--widget-blurred-color);
+}
+
+.schedule-row:hover {
+    background-color: var(--widget-hover-color);
+}
+
+.schedule-cell {
+    flex: 1;
+    text-align: center;
+}
+
+.schedule-container::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.schedule-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.schedule-container::-webkit-scrollbar-thumb {
+    background: var(--widget-hover-color);
+    border-radius: 10px;
+    border: 2px solid var(--widget-blurred-color);
+}
+
+.schedule-container::-webkit-scrollbar-thumb:hover {
+    background: var(--border-color);
+}
+
+.schedule-container::-webkit-scrollbar-thumb:active {
+    background: var(--text-color);
+}
+
+@media (max-width: 600px) {
+    .schedule-container {
+        width: calc(100% - 20px);
+        font-size: 16px;
+        overflow-x: scroll;
+    }
+
+    .schedule-row {
+        display: flex;
+        justify-content: space-between;
+        min-width: 600px;
+    }
+
+    .schedule-cell {
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .schedule-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--widget-hover-color);
+        font-weight: bold;
+        border-radius: 16px 16px 0 0;
+        padding: 10px;
+        min-width: 600px;
+    }
+}
+/* End schedule */
