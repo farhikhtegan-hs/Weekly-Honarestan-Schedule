@@ -25,30 +25,30 @@ const validCombinations = [
 
 const fieldsOfStudy = {
     "10th": [
-        "Elevator",
-        "Gas Supply Installations",
-        "Sanitary Installations",
-        "Production and development of the base",
-        "Building Electricity",
-        "Network and Software"
+        "آسانسور",
+        "تأسیسات گازرسانی",
+        "تأسیسات بهداشتی",
+        "تولید و توسعه پایگاه",
+        "برق ساختمان",
+        "شبکه و نرم‌افزار"
     ],
     "11th": [
-        "Elevator",
-        "Building Electricity",
-        "Industrial Electricity",
-        "Gas Supply Installations",
-        "Sanitary Installations",
-        "Network and Software",
-        "Production and development of the base"
+        "آسانسور",
+        "برق ساختمان",
+        "برق صنعتی",
+        "تأسیسات گازرسانی",
+        "تأسیسات بهداشتی",
+        "شبکه و نرم‌افزار",
+        "تولید و توسعه پایگاه"
     ],
     "12th": [
-        "Elevator",
-        "Building Electricity",
-        "Industrial Electricity",
-        "Gas Supply Installations",
-        "Sanitary Installations",
-        "Network and Software",
-        "Production and development of the base"
+        "آسانسور",
+        "برق ساختمان",
+        "برق صنعتی",
+        "تأسیسات گازرسانی",
+        "تأسیسات بهداشتی",
+        "شبکه و نرم‌افزار",
+        "تولید و توسعه پایگاه"
     ]
 };
 
