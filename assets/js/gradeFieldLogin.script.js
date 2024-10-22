@@ -25,30 +25,30 @@ const validCombinations = [
 
 const fieldsOfStudy = {
     "10th": [
-        "آسانسور",
-        "تأسیسات گازرسانی",
-        "تأسیسات بهداشتی",
-        "تولید و توسعه پایگاه",
-        "برق ساختمان",
-        "شبکه و نرم‌افزار"
+        { fa: "آسانسور", en: "elevator" },
+        { fa: "تأسیسات گازرسانی", en: "gas-supply-installations" },
+        { fa: "تأسیسات بهداشتی", en: "sanitary-installations" },
+        { fa: "تولید و توسعه پایگاه", en: "production-and-development-of-the-base" },
+        { fa: "برق ساختمان", en: "building-electricity" },
+        { fa: "شبکه و نرم‌افزار", en: "network-and-software" }
     ],
     "11th": [
-        "آسانسور",
-        "برق ساختمان",
-        "برق صنعتی",
-        "تأسیسات گازرسانی",
-        "تأسیسات بهداشتی",
-        "شبکه و نرم‌افزار",
-        "تولید و توسعه پایگاه"
+        { fa: "آسانسور", en: "elevator" },
+        { fa: "برق ساختمان", en: "building-electricity" },
+        { fa: "برق صنعتی", en: "industrial-electricity" },
+        { fa: "تأسیسات گازرسانی", en: "gas-supply-installations" },
+        { fa: "تأسیسات بهداشتی", en: "sanitary-installations" },
+        { fa: "شبکه و نرم‌افزار", en: "network-and-software" },
+        { fa: "تولید و توسعه پایگاه", en: "production-and-development-of-the-base" }
     ],
     "12th": [
-        "آسانسور",
-        "برق ساختمان",
-        "برق صنعتی",
-        "تأسیسات گازرسانی",
-        "تأسیسات بهداشتی",
-        "شبکه و نرم‌افزار",
-        "تولید و توسعه پایگاه"
+        { fa: "آسانسور", en: "elevator" },
+        { fa: "برق ساختمان", en: "building-electricity" },
+        { fa: "برق صنعتی", en: "industrial-electricity" },
+        { fa: "تأسیسات گازرسانی", en: "gas-supply-installations" },
+        { fa: "تأسیسات بهداشتی", en: "sanitary-installations" },
+        { fa: "شبکه و نرم‌افزار", en: "network-and-software" },
+        { fa: "تولید و توسعه پایگاه", en: "production-and-development-of-the-base" }
     ]
 };
 
@@ -61,14 +61,13 @@ function updateFields() {
     if (fieldsOfStudy[grade]) {
         fieldsOfStudy[grade].forEach(field => {
             const option = document.createElement("option");
-            option.value = field.toLowerCase().replace(/\s+/g, '-');
-            option.textContent = field;
+            option.value = field.en;
+            option.textContent = field.fa;
             fieldSelect.appendChild(option);
         });
     }
 }
 
-// Check Login
 function loginCheck() {
     const cookie = getCookie('login');
 
