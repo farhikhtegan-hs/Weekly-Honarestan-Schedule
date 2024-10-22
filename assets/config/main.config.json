@@ -17,6 +17,39 @@
             "startTime": "12:15",
             "endTime": "13:25"
           }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
         ]
       },
       "group2": {
@@ -27,6 +60,39 @@
             "lesson": "کمک نصاب آسانسور",
             "startTime": "13:50",
             "endTime": "17:40"
+          }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
           }
         ]
       }
@@ -48,6 +114,39 @@
             "startTime": "15:10",
             "endTime": "16:20"
           }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
         ]
       },
       "group2": {
@@ -65,6 +164,39 @@
             "lesson": "ایمنی و بهداشت",
             "startTime": "16:30",
             "endTime": "17:40"
+          }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
           }
         ]
       }
@@ -86,6 +218,39 @@
             "startTime": "15:10",
             "endTime": "16:20"
           }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
         ]
       },
       "group2": {
@@ -104,6 +269,39 @@
             "startTime": "16:30",
             "endTime": "17:40"
           }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
         ]
       }
     },
@@ -117,6 +315,39 @@
             "startTime": "7:45",
             "endTime": "16:20"
           }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
         ]
       },
       "group2": {
@@ -127,6 +358,39 @@
             "lesson": "شهروند",
             "startTime": "13:50",
             "endTime": "16:20"
+          }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
           }
         ]
       }
@@ -141,6 +405,39 @@
             "startTime": "7:45",
             "endTime": "13:25"
           }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
         ]
       },
       "group2": {
@@ -151,6 +448,39 @@
             "lesson": "برقکار ساختمان درجه 2",
             "startTime": "7:45",
             "endTime": "13:25"
+          }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
           }
         ]
       }
@@ -172,6 +502,39 @@
             "startTime": "13:50",
             "endTime": "16:20"
           }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
         ]
       },
       "group2": {
@@ -189,6 +552,39 @@
             "lesson": "دانش فنی پایه",
             "startTime": "13:50",
             "endTime": "16:20"
+          }
+        ],
+        "Sunday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Monday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Tuesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
+          }
+        ], "Wednesday": [
+          {
+            "class": "",
+            "teacher": "",
+            "lesson": "",
+            "startTime": "",
+            "endTime": ""
           }
         ]
       }
