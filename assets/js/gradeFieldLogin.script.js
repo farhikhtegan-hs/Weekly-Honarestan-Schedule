@@ -116,7 +116,7 @@ function loginCheck() {
         document.querySelector('.schedule-container').style.display = 'none';
         document.querySelector('.nav').style.display = 'none';
         console.log("Login failed: invalid grade, field of study, or group.");
-        showMessage('error', 'Invalid login details.');
+        showMessage('error', 'اطلاعات ورود نامعتبر است.');
     }
 }
 
@@ -136,7 +136,7 @@ function getFieldValues() {
     const fieldOfStudy = document.getElementById('field-of-study').value;
 
     if (!grade || !fieldOfStudy) {
-        showMessage('error', 'Please fill out both fields.');
+        showMessage('error', 'لطفاً همه فیلد را پر کنید.');
         throw new Error('Fields cannot be empty');
     }
 
@@ -180,12 +180,12 @@ document.getElementById('login-btn').addEventListener('click', () => {
         const group = document.getElementById('group').value;
         
         if (!group) {
-            showMessage('error', 'Please select a group.');
+            showMessage('error', 'لطفاً یک گروه را انتخاب کنید.');
             return;
         }
 
         setCookie('login', `${grade}-${fieldOfStudy}-${group}`, 365);
-        showMessage('success', 'Login successful!');
+        showMessage('success', 'ورود با موفقیت انجام شد');
         loginCheck();
     } catch (error) {
         console.error('Error during login:', error);
