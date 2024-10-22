@@ -1,0 +1,257 @@
+{
+  "10th": {
+    "elevator": {
+      "group1": {
+        "Saturday": [
+          {
+            "class": "202",
+            "teacher": "مهندس محمدبیگی",
+            "lesson": "کمک نصاب آسانسور",
+            "startTime": "7:45",
+            "endTime": "11:55"
+          },
+          {
+            "class": "112",
+            "teacher": "مهندس محمدبیگی",
+            "lesson": "دریل کار",
+            "startTime": "12:15",
+            "endTime": "13:25"
+          }
+        ]
+      },
+      "group2": {
+        "Saturday": [
+          {
+            "class": "202",
+            "teacher": "مهندس محمدبیگی",
+            "lesson": "کمک نصاب آسانسور",
+            "startTime": "13:50",
+            "endTime": "17:40"
+          }
+        ]
+      }
+    },
+    "gas supply installations": {
+      "group1": {
+        "Saturday": [
+          {
+            "class": "112",
+            "teacher": "مهندس رادپور",
+            "lesson": "جوشکاری سازه های فولادی",
+            "startTime": "7:45",
+            "endTime": "15:00"
+          },
+          {
+            "class": "112",
+            "teacher": "مهندس میرجانی",
+            "lesson": "ایمنی و بهداشت",
+            "startTime": "15:10",
+            "endTime": "16:20"
+          }
+        ]
+      },
+      "group2": {
+        "Saturday": [
+          {
+            "class": "112",
+            "teacher": "مهندس رادپور",
+            "lesson": "جوشکاری سازه های فولادی",
+            "startTime": "7:45",
+            "endTime": "15:00"
+          },
+          {
+            "class": "112",
+            "teacher": "مهندس میرجانی",
+            "lesson": "ایمنی و بهداشت",
+            "startTime": "16:30",
+            "endTime": "17:40"
+          }
+        ]
+      }
+    },
+    "sanitary installations": {
+      "group1": {
+        "Saturday": [
+          {
+            "class": "سوله تاسیسات",
+            "teacher": "دکتر متقیان",
+            "lesson": "لوله کش و نصاب وسایل بهداشتی",
+            "startTime": "7:45",
+            "endTime": "15:00"
+          },
+          {
+            "class": "112",
+            "teacher": "مهندس متقیان",
+            "lesson": "ایمنی و بهداشت",
+            "startTime": "15:10",
+            "endTime": "16:20"
+          }
+        ]
+      },
+      "group2": {
+        "Saturday": [
+          {
+            "class": "111",
+            "teacher": "مهندس میرجانی",
+            "lesson": "لوله کش و نصاب وسایل بهداشتی",
+            "startTime": "7:45",
+            "endTime": "15:00"
+          },
+          {
+            "class": "112",
+            "teacher": "مهندس میرجانی",
+            "lesson": "ایمنی و بهداشت",
+            "startTime": "16:30",
+            "endTime": "17:40"
+          }
+        ]
+      }
+    },
+    "production and development of the base": {
+      "group1": {
+        "Saturday": [
+          {
+            "class": "202",
+            "teacher": "مهندس الیاسی",
+            "lesson": "کاربر رایانه",
+            "startTime": "7:45",
+            "endTime": "16:20"
+          }
+        ]
+      },
+      "group2": {
+        "Saturday": [
+          {
+            "class": "202",
+            "teacher": "مهندس الیاسی",
+            "lesson": "شهروند",
+            "startTime": "13:50",
+            "endTime": "16:20"
+          }
+        ]
+      }
+    },
+    "building electricity": {
+      "group1": {
+        "Saturday": [
+          {
+            "class": "208",
+            "teacher": "مهندس حقیقت",
+            "lesson": "برقکار ساختمان درجه 2",
+            "startTime": "7:45",
+            "endTime": "13:25"
+          }
+        ]
+      },
+      "group2": {
+        "Saturday": [
+          {
+            "class": "207",
+            "teacher": "مهندس زارعی",
+            "lesson": "برقکار ساختمان درجه 2",
+            "startTime": "7:45",
+            "endTime": "13:25"
+          }
+        ]
+      }
+    },
+    "network and software": {
+      "group1": {
+        "Saturday": [
+          {
+            "class": "206",
+            "teacher": "مهندس حقیقت",
+            "lesson": "نصب و راه اندازی سیستم",
+            "startTime": "7:45",
+            "endTime": "13:25"
+          },
+          {
+            "class": "206",
+            "teacher": "مهندس حقیقت",
+            "lesson": "دانش فنی پایه",
+            "startTime": "13:50",
+            "endTime": "16:20"
+          }
+        ]
+      },
+      "group2": {
+        "Saturday": [
+          {
+            "class": "207",
+            "teacher": "مهندس زارعی",
+            "lesson": "تولید محتوای",
+            "startTime": "7:45",
+            "endTime": "13:25"
+          },
+          {
+            "class": "206",
+            "teacher": "مهندس حقیقت",
+            "lesson": "دانش فنی پایه",
+            "startTime": "13:50",
+            "endTime": "16:20"
+          }
+        ]
+      }
+    }
+  },
+  "11th": {
+    "elevator": {
+      "group1": {},
+      "group2": {}
+    },
+    "building electricity": {
+      "group1": {},
+      "group2": {}
+    },
+    "industrial electricity": {
+      "group1": {},
+      "group2": {}
+    },
+    "gas supply installations": {
+      "group1": {},
+      "group2": {}
+    },
+    "sanitary installations": {
+      "group1": {},
+      "group2": {}
+    },
+    "network and software": {
+      "group1": {},
+      "group2": {}
+    },
+    "production and development of the base": {
+      "group1": {},
+      "group2": {}
+    }
+  },
+  "12th": {
+    "elevator": {
+      "group1": {},
+      "group2": {}
+    },
+    "building electricity": {
+      "group1": {},
+      "group2": {}
+    },
+    "industrial electricity": {
+      "group1": {},
+      "group2": {}
+    },
+    "gas supply installations": {
+      "group1": {},
+      "group2": {}
+    },
+    "sanitary installations": {
+      "group1": {},
+      "group2": {}
+    },
+    "network and software": {
+      "group1": {},
+      "group2": {}
+    },
+    "production and development of the base": {
+      "group1": {},
+      "group2": {}
+    }
+  }
+}
